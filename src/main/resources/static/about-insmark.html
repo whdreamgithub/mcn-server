@@ -27,7 +27,7 @@
 
 				var isWeixin = ua.indexOf('micromessenger') != -1 && ua.indexOf('wxwork') == -1;
 				if (isWeixin && (!tmpGetCookie("_checkWxLogin") || !tmpGetCookie('_wxOpenId2'))) {
-					document.cookie="_checkWxLogin=true";document.location.href='/wxGetOpenId.jsp?url=' + encodeURIComponent(document.location.href);
+					//document.cookie="_checkWxLogin=true";document.location.href='/wxGetOpenId.jsp?url=' + encodeURIComponent(document.location.href);
 				}
 			} catch (e){}
 
